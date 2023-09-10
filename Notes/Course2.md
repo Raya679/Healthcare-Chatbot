@@ -322,6 +322,55 @@ Here decay_rate is a hyperparameter
 - Plateaus can make learning slow
 
 
+## Week 3 -
+
+### Hyperparameter tuning, Batch Normalization and Programming Frameworks
+
+**Tuning process**
+
+- Hyperparameters importance are:
+  - Learning rate.
+  - Momentum beta.
+  - Mini-batch size.
+  - No. of hidden units.
+  - No. of layers.
+  - Learning rate decay.
+  - Regularization lambda.
+  - Activation functions.
+  - Adam beta1, beta2 & epsilon.
+
+**Normalizing activations in a network**
+
+```
+Given Z[l] = [z(1), ..., z(m)]
+mean = 1/m * sum(z[i])
+variance = 1/m * sum((z[i] - mean)^2)
+Z_norm[i] = (z[i] - mean) / np.sqrt(variance + epsilon)
+```
+
+Then ,
+`Z_tilde[i] = gamma * Z_norm[i] + beta`
+
+**Fitting Batch Normalization into a neural network**
+
+![](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C2%20-%20Improving%20Deep%20Neural%20Networks%20Hyperparameter%20tuning%2C%20Regularization%20and%20Optimization/Notes/Images/bn.png)
+
+**Softmax Regression**
+
+Softmax regression generalizes logistic regression to  classes.
+
+```
+t = e^(Z[L])                      
+A[L] = e^(Z[L]) / sum(t)          
+```
+
+**Training a Softmax classifier**
+
+```
+L(y, y_hat) = - sum(y[j] * log(y_hat[j])) # Loss function
+J(w[1], b[1], ...) = - 1 / m * (sum(L(y[i], y_hat[i]))) # cost function
+dZ[L] = Y_hat - Y   # back propogation
+Y_hat * (1 - Y_hat)  # derivative of softmax
 
 
 
