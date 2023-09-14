@@ -1,4 +1,4 @@
-# Course 1 week 
+# Course 1 week 3 
 ```
 tanhz activation function makes mean closer to zero as cntralizatio of data
 
