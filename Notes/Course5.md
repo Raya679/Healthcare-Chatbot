@@ -207,7 +207,7 @@ CosineSimilarity(u, v) = u . v / ||u|| ||v|| = cos(θ)
 
 ![img](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/50.png)
 
-4. Equalize pairs - We want each pair to have difference only in gender
+4. Equalize pairs - We want each pair to have difference only in gender.
 
 ![img](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/51.png)
 
