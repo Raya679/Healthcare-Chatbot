@@ -80,7 +80,6 @@ Disadvantages -
 ![Deep RNNs](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/25.png)
 
 
-
 ## Week 2
 
 ### Introduction to Word Embeddings
@@ -211,3 +210,138 @@ CosineSimilarity(u, v) = u . v / ||u|| ||v|| = cos(θ)
 
 ![img](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/51.png)
 
+
+# Week 3 -
+
+## Sequence models & Attention mechanism
+
+### Various sequence to sequence architectures
+
+**Basic Models**
+
+- Examples 
+  - Machine translation
+  - Image Captioning
+
+- Basic model architecture will include encoder and decoder
+
+![Encoder-Decoder](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/53.png)
+
+**Picking the most likely sentence**
+
+- Machine Translation is building a conditional Language model
+
+![Model](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/55.png)
+
+- The most common algorithm to find the next likely words is beam search
+
+- Why not greedy search?
+  - The method of picking the first word that is most likely, then picking the second word and so on doesn't really work
+
+- Therefore Approximate Search Algorithm - tries to pick the sentence that maximizes the conditional probability 
+
+**Beam Search**
+
+- Approximate search Algorithm
+
+- Step 1:
+   - Suppose B = 3 where B is beam Width i.e number of possibilities that will be considered
+   - So 3 most likely first words will be considered
+- Step 2:
+   - For each of the choices it will consider what should be the next word
+   - i.e there will be `B*(no.of words in vocab)` possibilities
+   - Then 3 most likely (as B=3) choices will be considered out of these (May reject choices which were candidates for the first word)
+- Step 3:
+   - Then the third most likely words will be considered 
+   - Again top 3 words will be considered and so on.
+- Outcome:
+  - The most likely sentence
+
+**Refinements to Beam Search**
+
+- Length Normalization -
+
+ ![eq1](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/56.png)
+
+  - And to do that we multiply: `P(y<1> | x) * P(y<2> | x, y<1>) * ... * P(y<t> | x, y<y(t-1)>)`
+  - Each probability is a fraction, most of the time a small fraction.
+  - Multiplying small fractions will cause a numerical overflow. Meaning that it's too small for the floating part representation in your computer to store accurately.
+
+  - summing logs of probabilities instead of multiplying directly.
+
+![eq2](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/57.png)
+
+   - The two optimization functions we have mentioned are preferring small sequences rather than long ones. Because multiplying more fractions gives a smaller value, so fewer fractions - bigger result.
+   
+   - dividing by the number of elements in the sequence
+
+![eq3](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/58.png)
+
+- How to choose B?
+  - large B - better results but slower
+  - small B - worse results but faster
+
+**Error analysis in beam search**
+
+- To do that, we calculate P(y* | X) and P(ŷ | X). There are two cases:
+  - Case 1 `(P(y* | X) > P(y_hat | X))`: 
+    - Conclusion: Beam search is at fault.
+  - Case 2 `(P(y* | X) <= P(y_hat | X))`:
+    - Conclusion: RNN model is at fault.
+
+**BLEU Score**
+
+- BLEU stands for bilingual evaluation understudy.
+- Given a machine generated translation it allows you to automatically compute a score that measures how good is that machine translation
+
+![eq](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/60.png)
+
+- helps in measuring the degree to which the machine translation output overlaps with the references
+
+- Pn = Bleu score on one type of n-gram
+- Combined BLEU score = `BP * exp(1/n * sum(Pn))`
+- BP stands for brevity penalty
+  - adjustment factor that penalizes translation systems that outputs translations that are too short
+
+![eq](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/62.png)
+
+**Attention Model Intuition**
+
+- allows a neural network to pay attention to only part of an input sentence while it generating translation much like human translation
+
+![intuition](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/66.png)
+
+**Attention Model**
+
+![intuition](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/67.png)
+
+![eq](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/70.png)
+
+![eq](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/71.png)
+
+- Computing attention
+  - alpha<t, t'> = amount of attention y<t> should pay to a<t'>
+
+![eq](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/72.png)
+
+![eq](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/73.png)
+
+- Visualizing attention weights
+
+![eq](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/74.png)
+
+- Dowside - Takes quadratic time and quadratic cost to run this algorithm
+
+**Speech Recognition**
+
+- can use attention model
+
+![img](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/77.png)
+
+- One method - CTC cost which stands for "Connectionist temporal classification"
+
+**Trigger Word Detection**
+
+![img](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/81.png)
+
+- One disadvantage of this creates a very imbalanced training set. There will be a lot of zeros and few ones.
