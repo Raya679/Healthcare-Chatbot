@@ -345,3 +345,62 @@ CosineSimilarity(u, v) = u . v / ||u|| ||v|| = cos(θ)
 ![img](https://github.com/amanchadha/coursera-deep-learning-specialization/raw/master/C5%20-%20Sequence%20Models/Notes/Images/81.png)
 
 - One disadvantage of this creates a very imbalanced training set. There will be a lot of zeros and few ones.
+
+
+# Week 4
+
+### Transformers
+
+**Transformer Network Intuition**
+
+- Transformer is a combination of the use of Attention representations with CNN style of processing
+  - RNN may process one output at a time
+  - Attention is a way of computing very rich, very useful representations of words
+  - CNN takes a lot of inputs (pixels) and computes representation at parallel
+
+- Self-Attention: compute n representations for n words in parallel
+- Multi-Head Attention: basically a for loop over self-attention => multiple versions of these representations
+
+**Self-Attention**
+
+- For each word,
+  - A(q, K, V) = attention-based vector representation of a word
+
+![eq](https://github.com/quanghuy0497/Deep-Learning-Specialization/raw/main/Course%205%20-%20Sequence%20Models/Images/86.png)
+
+- For every word, we have 3 values query q, key K, and value V
+  - q let you ask a question about that word i, like what's happening there??
+  - K help you figure out if this word gives the most relevant answer to that question, i.e. K<1> is a person, K<1> is an action.
+  - V determines this particular word i should be represented within the representation A
+
+![self-attention](https://github.com/quanghuy0497/Deep-Learning-Specialization/raw/main/Course%205%20-%20Sequence%20Models/Images/87.png)
+
+- `Attention(Q, K, V) = softmax(Q.dot(K.T)/sqrt(d_k)).V`
+
+**Multi-Head Attention**
+
+- Each time you calculate the self-attention is called the head.
+- With multi-head attention, you take the same set of [query, key, value] as input and calculate multiple self-attentions for the Attention(WQ1Q, WK1K, WV1V) (visite) to answer what's happened?
+
+![Multi-head attention](https://github.com/quanghuy0497/Deep-Learning-Specialization/raw/main/Course%205%20-%20Sequence%20Models/Images/88.png)
+
+
+**Transformer Network**
+
+- Encoder - 
+  -  The first step in the transformer is, these embeddings get fed into an encoder block which has a multi-head attention layer.
+  - This layer then produces a matrix that can be passed into a feed-forward neural network which helps determine what interesting features there are in the sentence. 
+  - In the transformer paper, this encoding block is repeated n times and a typical value for n is six. - After maybe about six times through this block, we will then feed the output of the encoder into a decoder block
+
+- Decoder -
+  - The Decoder block takes input from the first few words of whatever we've generated of the translation (in the beginning, the translation begin with token ), the feed to the Multi-Head Attention to generate Q matrix
+  - Then the Q matrix is combined with K and V from Encoder output and feed to the second Multi-Head Attention block
+  - The Q from the first block is what we've generated so far, combined with the K and Q from the original input to decide what is the next word in the sequence to generate
+  - Finally, the out of the second block is feed to the Feed-Forward NN, and the Decoder block is also repeated N times, with the output of the Decoder block is feed to its input for another round of generating the most appropriate output
+
+![img](https://github.com/quanghuy0497/Deep-Learning-Specialization/raw/main/Course%205%20-%20Sequence%20Models/Images/89.png)
+
+- Positional Encoding 
+  - to encode the position of words within the sentence in the input of Encoder and Decoder blocks
+
+![img](https://github.com/quanghuy0497/Deep-Learning-Specialization/raw/main/Course%205%20-%20Sequence%20Models/Images/90.png)
