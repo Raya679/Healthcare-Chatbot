@@ -76,3 +76,6 @@
 
 ![lco](https://camo.githubusercontent.com/a990eec1cfa296dc4c0f8de12aaa87944c6fef22de1b80fc020acabcd72f51e0/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f76322f726573697a653a6669743a313130302f666f726d61743a776562702f312a36516e505553765f74394259394676385f614c622d512e706e67)
 # Deep RNNs
+![lco](https://raw.githubusercontent.com/amanchadha/coursera-deep-learning-specialization/master/C5%20-%20Sequence%20Models/Notes/Images/25.png)
+
+#### a<sup>[l]< t ></sup> denotes the activation function at t<sup>th</sup> time step and l<sup>th</sup> layer
