@@ -14,7 +14,7 @@ This objective is satisfied by fine-tuning an already existing LLM on a medical-
 - [Pytorch](https://pytorch.org/)
 - [Google Colab](https://colab.research.google.com/)
 
-## File Structure
+<!-- ## File Structure -->
 
 
 ## MODELS USED
@@ -23,7 +23,7 @@ This objective is satisfied by fine-tuning an already existing LLM on a medical-
 - [dolly-v2-3b](https://huggingface.co/databricks/dolly-v2-3b) for Document based LLM
 
 ## THEORY AND APPROACH
-### Terms/prerequsites required 
+
 ### NLP:
 Natural language processing (NLP) refers to the branch of computer science—and more specifically,
 the branch of artificial intelligence or AI—concerned with giving computers the ability to understand
@@ -54,7 +54,7 @@ complete with the speaker or writer’s intent and sentiment.
 3. Providing contact information for appropriate specialists for consultancy.
 
 
-## Contributors
+## CONTRIBUTORS
 * [Anushka Yadav](https://github.com/2412anushka)
 * [Raya Chakravarty](https://github.com/Raya679)
 * [Tvisha Vedant](https://github.com/tvilight4)
