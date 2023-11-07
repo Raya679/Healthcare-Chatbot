@@ -1,4 +1,4 @@
-###What is Neural network?
+### What is Neural network?
 
 - In neural networks, given enough data about x and y, given enough training examples with both x and y, neural networks are remarkably good at figuring out functions that accurately map from x to y.
 - Supervised learning means we have the (X,Y) and we need to get the function that maps X to Y.
@@ -19,4 +19,4 @@ was from scratch, we made functions for all our tasks. These functions are liste
 
   This was a 5 layer neural network.
 
-  
+
