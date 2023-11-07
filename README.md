@@ -65,4 +65,4 @@ complete with the speaker or writer’s intent and sentiment.
 * Completed [these](https://www.coursera.org/specializations/deep-learning) 3 courses for understanding Deep Learning concepts like RNNs, LSTMs and Attention Mechanism and learnt to make a DL model.
 * Referred [this](https://arxiv.org/pdf/1706.03762.pdf) for understanding of Transformer Architecture
 * Completed [this](https://www.coursera.org/learn/generative-ai-with-llms) course for learning the concept of Finetuning.
-* Special Thanks to our awesome mentors [Dishie Vinchhi](https://github.com/Dishie2498) and [Om Doiphode](https://github.com/Om-Doiphode) who always helped us during our project journey. 
+* Special Thanks to our mentors [Dishie Vinchhi](https://github.com/Dishie2498) and [Om Doiphode](https://github.com/Om-Doiphode) who guided us during our project journey. 
