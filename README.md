@@ -43,10 +43,10 @@ complete with the speaker or writer’s intent and sentiment.
 - Parameter Efficient Fine-Tuning (PEFT) methods specifically attempt to address some of the challenges of performing full fine-training. 
 - PEFT updates only a small subset of parameters which helps prevent catastrophic forgetting.The new parameters are combined with the original LLM weights for inference.
 
-![Fine=tuning](\assets\Flowchart1.jpeg)
+![Fine=tuning](assets/Flowchart1.jpeg)
 
 ### Doc-based LLMs
-![Doc-based](\assets\Flowchart2.jpeg)
+![Doc-based](assets/Flowchart2.jpeg)
 
 ## FUTURE WORKS
 1. Training the model on a larger dataset provided we have access to local GPU for more accurate results
