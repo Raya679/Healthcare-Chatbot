@@ -28,6 +28,66 @@ This objective is satisfied by fine-tuning an already existing LLM on a medical-
 - [Google Colab](https://colab.research.google.com/)
 
 ### File Structure
+Healthcare-Chatbot/
+├── assets
+│   ├── Flowchart1.jpeg
+│   ├── Flowchart2.jpeg
+│   ├── Result1-CHATGPT.png
+│   ├── Result1-Finetuned.png
+│   ├── Result2-CHATGPT.png
+│   └── Result2-Finetuned.png
+├── Coursera-Notes
+│   ├── Course1.md
+│   ├── Course2.md
+│   ├── Course5.md
+│   └── GenerativeAI_LLM_Coursera.pdf
+├── Coursera-Programming-Assignments
+│   ├── 01.Python_Basics_with_Numpy.ipynb
+│   ├── 02.Logistic_Regression_with_a_Neural_Network_mindset.ipynb
+│   ├── 03.Planar_data_classification_with_one_hidden_layer.ipynb
+│   ├── 04.Building_your_Deep_Neural_Network_Step_by_Step.ipynb
+│   ├── 05.Deep Neural Network - Application.ipynb
+│   ├── 06.Initialization.ipynb
+│   ├── 07.Regularization.ipynb
+│   ├── 08.Gradient_Checking.ipynb
+│   ├── 09.Optimization_methods.ipynb
+│   ├── 10.Tensorflow_introduction.ipynb
+│   ├── 11.Building_a_Recurrent_Neural_Network_Step_by_Step.ipynb
+│   ├── 12.Dinosaurus_Island_Character_level_language_model.ipynb
+│   ├── 13.Improvise_a_Jazz_Solo_with_an_LSTM_Network_v4.ipynb
+│   ├── 14.Operations_on_word_vectors_v2a.ipynb
+│   ├── 15.Emoji_v3a.ipynb
+│   ├── 16.Neural_machine_translation_with_attention_v4a.ipynb
+│   ├── 17.Trigger_word_detection_v2a.ipynb
+│   └── 18.C5_W4_A1_Transformer_Subclass_v1.ipynb
+├── DocBasedLLM
+│   ├── ChatBot.ipynb
+│   ├── Conversational Chatbot.ipynb
+│   └── HealthData.pdf
+├── Finetuned-Model-Falcon7b
+│   ├── HealthcareChatbot.ipynb
+│   └── README.md
+├── Finetuned-Model-Llama2_5k
+│   ├── 5k_Dataset.json
+│   ├── HealthcareChatbot_inference_llama_2.ipynb
+│   ├── HealthcareChatbot_training_llama_2.ipynb
+│   ├── README.md
+│   └── requirements.txt.txt
+├── Neural-Network-Implementation
+│   ├── CatvsNon-cat_classifer.ipynb
+│   ├── README.md
+│   ├── test_catvnoncat.h5
+│   └── train_catvnoncat.h5
+├── README.md
+├── Report
+│   └── Project-Report.pdf
+├── Sentimental-Analysis
+│   ├── IMDB_Dataset.csv
+│   ├── README.md
+│   └── SentimentAnalyasisLSTM.ipynb
+└── Transformer-DecoderOnly-Architechture
+    └── Transformerfromscratch-final.ipynb
+
 
 ## Getting Started
 
