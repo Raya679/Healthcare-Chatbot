@@ -37,21 +37,39 @@ complete with the speaker or writer’s intent and sentiment.
 
 ![Fine-tuning](https://www.labellerr.com/blog/content/images/size/w2000/2023/08/6488323befb01b8fac0fe171_VmVuJPKbeUxwrJcqoQ5EYZOSWGiW2rE-C_Yj563jJAQrE2V8PP1ibzWUrXrDLXzJIl7i205vzAfQKRL53whzjrBJKXtP8J9j4J_Pn9vtAh-o9sxEUAIPxHYZgNuJyvOXleZZDzTxr8sIh371Xznqwn8.png)
 
-- One of the major disadvantages of finetuning is catastrophic forgetting - Catastrophic forgetting occurs due to the nature of the optimization process during training. When a model trains to minimize the current task’s loss, it adjusts its parameters to better fit the new data. However, this adjustment often results in the model deviating from its original state, leading to a loss of knowledge encoded in its weights.
+- One of the major disadvantages of finetuning is catastrophic forgetting.
+To prevent this we can use **Parameter Efficient Fine-Tuning (PEFT)** which updates only a small subset of parameters which helps prevent catastrophic forgetting.
 
-**Parameter-Efficient-Finetuning**
-- Parameter Efficient Fine-Tuning (PEFT) methods specifically attempt to address some of the challenges of performing full fine-training. 
-- PEFT updates only a small subset of parameters which helps prevent catastrophic forgetting.The new parameters are combined with the original LLM weights for inference.
+**Steps Followed for fine-tuning**
+![Fine-tuning](assets/Flowchart1.jpeg)
 
-![Fine=tuning](assets/Flowchart1.jpeg)
-
-### Doc-based LLMs
+### Doc-based LLMs 
+**Steps Followed for creating a Document Based LLM**
 ![Doc-based](assets/Flowchart2.jpeg)
+
+### RESULTS AND DEMO
+
+#### Results of the Finetuned Model vs CHATGPT
+
+**Example 1**
+- Fine-tuned model -
+![Result1](assets/Result1-Finetuned.png)
+
+- CHATGPT -
+![CHATGPT Result](assets/Result1-CHATGPT.png)
+
+**Example 2**
+- Fine-tuned model -
+![Result1](assets/Result2-Finetuned.png)
+
+- CHATGPT -
+![CHATGPT Result](assets/Result2-CHATGPT.png)
+
 
 ## FUTURE WORKS
 1. Training the model on a larger dataset provided we have access to local GPU for more accurate results
 2. Creating a proper user-friendly interface.
-3. Providing contact information for appropriate specialists for consultancy.
+3. Providing contact information of appropriate specialists for consultancy.
 
 
 ## CONTRIBUTORS
