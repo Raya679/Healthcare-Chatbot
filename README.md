@@ -62,7 +62,7 @@ To prevent this we can use **Parameter Efficient Fine-Tuning (PEFT)** which upda
 - Fine-tuned model -
 ![Result1](assets/Result2-Finetuned.png)
 
-- CHATGPT -
+- CHATGPT -<br>
 ![CHATGPT Result](assets/Result2-CHATGPT.png)
 
 
