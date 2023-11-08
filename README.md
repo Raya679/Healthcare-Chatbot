@@ -1,28 +1,53 @@
 # Healthcare Chatbot
-
+## Table of Contents  
+- [About the Project](#about-the-project)  
+    - [Aim](#aim)  
+    - [Description](#description)  
+    - [Tech Stack](#tech-stack)  
+    - [File Structure](#file-structure)  
+- [Getting Started](#getting-started)  
+    - [Prerequisites](#prerequisites)  
+    - [Installation](#installation)  
+    - [Execution](#execution)  
+- [Theory and Approach](#theory-and-approach)   
+- [Results and Demo](#results-and-demo)  
+- [Future Work](#future-work)  
+- [Contributors](#contributors)  
+- [Acknowledgement and Resources](#acknowledgement-and-resources)  
 ## About the Project
-## AIM:
+### Aim:
 The prime Objective of the project is to develop a chatbot which interacts with the user in question-answer format to provide the required personalized and reliable healthcare information and support.
-## DESCRIPTION:
+### Description:
 The HealthBuddy Chatbot aims to create a versatile chatbot that can offer assistance in various aspects of healthcare, including symptom diagnosis, mental health consultation, nutrition guidance, and more. The inspiration behind this project is to empower users to make informed healthcare decisions and promote overall well-being.
 This objective is satisfied by fine-tuning an already existing LLM on a medical-specific dataset.
 
-## TECH STACK
+### Tech Stack
 #### We have used the following technologies for this project:
 - [Python](https://www.python.org/)
 - [Numpy](https://numpy.org/doc/#)
 - [Pytorch](https://pytorch.org/)
 - [Google Colab](https://colab.research.google.com/)
 
-<!-- ## File Structure -->
+### File Structure
 
+## Getting Started
 
-## MODELS USED
+### Prerequisites
+
+To download and use this code, the minimum requirements are:
+- [Google Colab](https://colab.research.google.com/) 
+
+### Execution
+
+- Navigate to the ```Healthcare-Chatbot\Finetuned-Model-Llama2_5k\HealthcareChatbot_inference_llama_2.ipynb``` file and upload it on google colab
+- After running all the cells in the notebook Open [this](https://lumbering-flickering-miniature-horse.anvil.app/) and you are all set.
+
+## Models Used
 - [Falcon-7b](https://huggingface.co/vilsonrodrigues/falcon-7b-instruct-sharded) for fine tuning 
 - [Llama-2-chat](https://huggingface.co/NousResearch/Llama-2-7b-chat-hf) for fine tuning 
 - [dolly-v2-3b](https://huggingface.co/databricks/dolly-v2-3b) for Document based LLM
 
-## THEORY AND APPROACH
+## Theory and Approach
 
 ### NLP:
 Natural language processing (NLP) refers to the branch of computer science—and more specifically,
@@ -47,7 +72,7 @@ To prevent this we can use **Parameter Efficient Fine-Tuning (PEFT)** which upda
 **Steps Followed for creating a Document Based LLM**
 ![Doc-based](assets/Flowchart2.jpeg)
 
-### RESULTS AND DEMO
+## Results and Demo
 
 #### Results of the Finetuned Model vs CHATGPT
 
@@ -55,29 +80,30 @@ To prevent this we can use **Parameter Efficient Fine-Tuning (PEFT)** which upda
 - Fine-tuned model -
 ![Result1](assets/Result1-Finetuned.png)
 
-- CHATGPT -
+- CHATGPT -  
+
 ![CHATGPT Result](assets/Result1-CHATGPT.png)
 
 **Example 2**
-- Fine-tuned model -
+- Fine-tuned model -  
 ![Result1](assets/Result2-Finetuned.png)
 
-- CHATGPT -<br>
+- CHATGPT -
 ![CHATGPT Result](assets/Result2-CHATGPT.png)
 
 
-## FUTURE WORKS
+## Future Work
 1. Training the model on a larger dataset provided we have access to local GPU for more accurate results
 2. Creating a proper user-friendly interface.
 3. Providing contact information of appropriate specialists for consultancy.
 
 
-## CONTRIBUTORS
+## Contributors
 * [Anushka Yadav](https://github.com/2412anushka)
 * [Raya Chakravarty](https://github.com/Raya679)
 * [Tvisha Vedant](https://github.com/tvilight4)
 
-## AKNOWLEGEMENT AND RESOURCES
+## Acknowledgement and Resources
 *  Special thanks to [COC VJTI](https://github.com/CommunityOfCoders) for [ProjectX](https://github.com/CommunityOfCoders/Project-X-2023) 2023 
 * Referred [this](https://www.youtube.com/watch?v=EMXfZB8FVUA) for understanding the use of pytorch
 * Completed [these](https://www.coursera.org/specializations/deep-learning) 3 courses for understanding Deep Learning concepts like RNNs, LSTMs and Attention Mechanism and learnt to make a DL model.
