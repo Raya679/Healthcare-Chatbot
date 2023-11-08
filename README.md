@@ -28,7 +28,7 @@ This objective is satisfied by fine-tuning an already existing LLM on a medical-
 - [Google Colab](https://colab.research.google.com/)
 
 ### File Structure
-Healthcare-Chatbot/
+
     ├── assets
     │   ├── Flowchart1.jpeg
     │   ├── Flowchart2.jpeg
@@ -87,7 +87,6 @@ Healthcare-Chatbot/
     │   └── SentimentAnalyasisLSTM.ipynb
     └── Transformer-DecoderOnly-Architechture
         └── Transformerfromscratch-final.ipynb
-
 
 ## Getting Started
 
