@@ -30,12 +30,12 @@ This objective is satisfied by fine-tuning an already existing LLM on a medical-
 ### File Structure
 
     ├── assets
-       ├── Flowchart1.jpeg
-       ├── Flowchart2.jpeg
-       ├── Result1-CHATGPT.png
-       ├── Result1-Finetuned.png
-       ├── Result2-CHATGPT.png
-        └── Result2-Finetuned.png
+    │   ├── Flowchart1.jpeg
+    │   ├── Flowchart2.jpeg
+    │   ├── Result1-CHATGPT.png
+    │   ├── Result1-Finetuned.png
+    │   ├── Result2-CHATGPT.png
+    │   └── Result2-Finetuned.png
     ├── Coursera-Notes
     │   ├── Course1.md
     │   ├── Course2.md
