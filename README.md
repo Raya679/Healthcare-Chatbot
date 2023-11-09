@@ -154,7 +154,7 @@ To prevent this we can use **Parameter Efficient Fine-Tuning (PEFT)** which upda
 1. Training the model on a larger dataset provided we have access to local GPU for more accurate results
 2. Creating a proper user-friendly interface.
 3. Providing contact information of appropriate specialists for consultancy.
-
+4. Adding the feature to take images as input(for dermatological reasons)
 
 ## Contributors
 * [Anushka Yadav](https://github.com/2412anushka)
