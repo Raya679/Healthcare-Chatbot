@@ -163,8 +163,8 @@ To prevent this we can use **Parameter Efficient Fine-Tuning (PEFT)** which upda
 
 ## Acknowledgement and Resources
 *  Special thanks to [COC VJTI](https://github.com/CommunityOfCoders) for [ProjectX](https://github.com/CommunityOfCoders/Project-X-2023) 2023 
-* Referred [this](https://www.youtube.com/watch?v=EMXfZB8FVUA) for understanding the use of pytorch
-* Completed [these](https://www.coursera.org/specializations/deep-learning) 3 courses for understanding Deep Learning concepts like RNNs, LSTMs and Attention Mechanism and learnt to make a DL model.
-* Referred [this](https://arxiv.org/pdf/1706.03762.pdf) for understanding of Transformer Architecture
-* Completed [this](https://www.coursera.org/learn/generative-ai-with-llms) course for learning the concept of Finetuning.
+* [Deep Learning specialization](https://www.coursera.org/specializations/deep-learning) for understanding  concepts like RNNs, LSTMs and the Attention Mechanism.
+* [Pytorch tutorials](https://www.youtube.com/watch?v=EMXfZB8FVUA) for understanding the pytorch framework.
+* [Attention is all you need Paper](https://arxiv.org/pdf/1706.03762.pdf) for understanding of Transformer Architecture
+* [Generative AI with LLMs](https://www.coursera.org/learn/generative-ai-with-llms) for learning the concept of Finetuning.
 * Special Thanks to our mentors [Dishie Vinchhi](https://github.com/Dishie2498) and [Om Doiphode](https://github.com/Om-Doiphode) who guided us during our project journey. 
