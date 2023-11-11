@@ -132,12 +132,16 @@ To prevent this we can use **Parameter Efficient Fine-Tuning (PEFT)** which upda
 
 ## Results and Demo
 
-#### Demo Video(with the conversational hostory feature)
+#### Demo Video(with the conversational history feature)
 
 
 
 https://github.com/Raya679/Healthcare-Chatbot/assets/122543856/49c671e8-e519-4393-8fd6-faa0c79422ef
 
+#### Demo Video(exhibiting how the model gives specific answers to various questions)
+
+
+https://github.com/Raya679/Healthcare-Chatbot/assets/122543856/233c4bbc-b387-4804-9467-a4bd8d09cfad
 
 
 
