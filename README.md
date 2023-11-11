@@ -136,7 +136,9 @@ To prevent this we can use **Parameter Efficient Fine-Tuning (PEFT)** which upda
 
 
 
-https://github.com/Raya679/Healthcare-Chatbot/assets/122543856/d3844648-bc45-44b3-bd46-3ace1c0088da
+https://github.com/Raya679/Healthcare-Chatbot/assets/122543856/49c671e8-e519-4393-8fd6-faa0c79422ef
+
+
 
 
 #### Results of the Finetuned Model vs CHATGPT
