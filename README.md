@@ -133,8 +133,11 @@ To prevent this we can use **Parameter Efficient Fine-Tuning (PEFT)** which upda
 ## Results and Demo
 
 #### Demo Video(with the conversational hostory feature)
-https://github.com/Raya679/Healthcare-Chatbot/blob/main/assets/ezgif.com-video-to-gif.mp4
-![](assets/history.mp4)
+
+
+
+https://github.com/Raya679/Healthcare-Chatbot/assets/122543856/d3844648-bc45-44b3-bd46-3ace1c0088da
+
 
 #### Results of the Finetuned Model vs CHATGPT
 
