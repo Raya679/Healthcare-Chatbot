@@ -149,6 +149,7 @@ https://github.com/Raya679/Healthcare-Chatbot/assets/122543856/233c4bbc-b387-480
 
 **Example 1**
 - Fine-tuned model -
+  
 ![Result1](assets/Result1-Finetuned.png)
 
 - CHATGPT -  
@@ -156,10 +157,12 @@ https://github.com/Raya679/Healthcare-Chatbot/assets/122543856/233c4bbc-b387-480
 ![CHATGPT Result](assets/Result1-CHATGPT.png)
 
 **Example 2**
-- Fine-tuned model -  
+- Fine-tuned model -
+  
 ![Result1](assets/Result2-Finetuned.png)
 
 - CHATGPT -
+  
 ![CHATGPT Result](assets/Result2-CHATGPT.png)
 
 
